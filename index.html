@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sonrisa Uruguaya, clínica dental en Montevideo.">
+  <title>Sonrisa Uruguaya | Clínica dental</title>
+  <style>
+    :root{--azul:#116a83;--oscuro:#08475a;--menta:#39b7a5;--texto:#17343c;--blanco:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--texto);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:#f7fbfc;line-height:1.6}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px clamp(24px,7vw,100px);background:rgba(255,255,255,.95)}
+    .marca{display:flex;align-items:center;gap:12px;color:var(--oscuro);font-size:1.2rem;font-weight:800}.logo{display:grid;width:42px;height:42px;place-items:center;border-radius:14px;color:#fff;background:var(--menta);font-size:1.35rem}
+    nav a{margin-left:24px;color:var(--texto);text-decoration:none;font-weight:650}
+    .hero{display:grid;min-height:560px;padding:80px clamp(24px,8vw,120px);place-items:center start;background:radial-gradient(circle at 80% 30%,rgba(57,183,165,.28),transparent 28%),linear-gradient(135deg,#eefbfc,#dff5f8)}
+    .hero-contenido{max-width:720px}.etiqueta{display:inline-block;padding:7px 13px;border-radius:999px;color:var(--azul);background:#fff;font-size:.85rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    h1{margin:20px 0;color:var(--oscuro);font-size:clamp(2.7rem,7vw,5.4rem);line-height:1;letter-spacing:-.055em}.hero p{max-width:580px;margin-bottom:30px;font-size:1.18rem}
+    .boton{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;color:#fff;background:var(--azul);text-decoration:none;font-weight:800;box-shadow:0 10px 25px rgba(17,106,131,.2);transition:.2s}.boton:hover{transform:translateY(-2px);background:var(--oscuro)}
+    main section{padding:75px clamp(24px,8vw,120px)}h2{margin:0 0 12px;color:var(--oscuro);font-size:clamp(2rem,4vw,3rem)}.subtitulo{margin:0 0 35px;color:#527079}
+    .servicios{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.tarjeta{padding:28px;border:1px solid #deecef;border-radius:18px;background:#fff;box-shadow:0 14px 40px rgba(25,77,88,.07)}.tarjeta span{font-size:2rem}.tarjeta h3{margin:14px 0 6px;color:var(--oscuro)}
+    .informacion{display:grid;grid-template-columns:1fr 1fr;gap:24px;background:var(--oscuro)}.panel{padding:35px;border-radius:20px;color:var(--texto);background:#fff}.panel h2{font-size:1.7rem}.alerta{border-left:6px solid #f2a93b}
+    footer{padding:30px;color:#668088;background:#fff;text-align:center}.ayuda-flotante{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:10px;padding:15px 20px;border-radius:999px;color:#fff;background:var(--azul);box-shadow:0 12px 35px rgba(8,71,90,.35);text-decoration:none;font-weight:800}.ayuda-flotante:hover{background:var(--oscuro)}
+    @media(max-width:850px){nav{display:none}.servicios{grid-template-columns:repeat(2,1fr)}.informacion{grid-template-columns:1fr}}@media(max-width:520px){.hero{min-height:500px;padding-top:55px}.servicios{grid-template-columns:1fr}.ayuda-flotante{right:14px;bottom:14px}}
+  </style>
 </head>
 <body>
-    <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="TiyorSJGY9jEckU-IpzRY";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+  <header>
+    <div class="marca"><span class="logo" aria-hidden="true">✦</span> Sonrisa Uruguaya</div>
+    <nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#horarios">Horarios</a><a href="/help">Ayuda</a></nav>
+  </header>
+  <section class="hero">
+    <div class="hero-contenido"><span class="etiqueta">Clínica dental en Montevideo</span><h1>Tu sonrisa, en buenas manos.</h1><p>Cuidamos tu salud bucal con atención cercana, profesional y tratamientos pensados para vos.</p><a class="boton" href="/help">💬 Consultanos ahora</a></div>
+  </section>
+  <main>
+    <section id="servicios">
+      <h2>Nuestros servicios</h2><p class="subtitulo">Todo lo que necesitás para cuidar y disfrutar tu sonrisa.</p>
+      <div class="servicios">
+        <article class="tarjeta"><span aria-hidden="true">🦷</span><h3>Limpieza dental</h3><p>Prevención y cuidado para mantener una boca sana.</p></article>
+        <article class="tarjeta"><span aria-hidden="true">✨</span><h3>Blanqueamiento</h3><p>Tratamientos seguros para una sonrisa más luminosa.</p></article>
+        <article class="tarjeta"><span aria-hidden="true">😁</span><h3>Ortodoncia</h3><p>Opciones para alinear tus dientes y mejorar tu mordida.</p></article>
+        <article class="tarjeta"><span aria-hidden="true">🚑</span><h3>Urgencias</h3><p>Atención todos los días mediante nuestro número de guardia.</p></article>
+      </div>
+    </section>
+    <section class="informacion" id="horarios">
+      <div class="panel"><h2>Horarios de atención</h2><p><strong>Lunes a viernes:</strong> 9:00 a 18:00</p><p><strong>Sábados:</strong> 9:00 a 13:00</p><p>Nos encontramos en Montevideo, Uruguay.</p></div>
+      <div class="panel alerta"><h2>Urgencias odontológicas</h2><p>Atendemos urgencias todos los días, incluso fuera de horario, llamando al número de guardia.</p><p><strong>Importante:</strong> no atendemos urgencias de menores de 12 años. Estos casos se derivan al Hospital Pediátrico más cercano.</p></div>
+    </section>
+  </main>
+  <footer>© 2026 Sonrisa Uruguaya · Montevideo</footer>
+  <a class="ayuda-flotante" href="/help" aria-label="Abrir centro de ayuda">💬 ¿Necesitás ayuda?</a>
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="TiyorSJGY9jEckU-IpzRY";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
 </body>
 </html>
